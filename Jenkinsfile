@@ -8,7 +8,7 @@ pipeline {
         ECR_REPO = 'attendance-system'
         IMAGE_TAG = "${BUILD_NUMBER}"
 
-        AWS_ACCOUNT_ID = 'AKIA53YLPXWZVXOTIEVW'
+        AWS_ACCOUNT_ID = '952969969075'
 
         IMAGE_URI =
         "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${IMAGE_TAG}"
