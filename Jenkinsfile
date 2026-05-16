@@ -4,7 +4,7 @@ pipeline {
 
     environment {
 
-        AWS_REGION = 'us-east-1'
+        AWS_REGION = 'ap-south-1'
         ECR_REPO = 'attendance-system'
         IMAGE_TAG = "${BUILD_NUMBER}"
 
@@ -55,7 +55,7 @@ pipeline {
 
                 withCredentials([
                     [$class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'aws-creds']
+                    credentialsId: 'aws-creds-new']
                 ]) {
 
                     sh """
