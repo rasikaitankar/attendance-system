@@ -4,7 +4,7 @@ pipeline {
 
     environment {
 
-        AWS_REGION = 'ap-south-1'
+        AWS_REGION = 'us-east-1'
         ECR_REPO = 'attendance-system'
         IMAGE_TAG = "${BUILD_NUMBER}"
 
